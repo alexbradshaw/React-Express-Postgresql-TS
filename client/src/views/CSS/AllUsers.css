@@ -1,0 +1,14 @@
+#usersUL {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 75px;
+}
+
+#usersUL h2 {
+  color: red;
+}
+
+#usersUL span {
+  color: white;
+}

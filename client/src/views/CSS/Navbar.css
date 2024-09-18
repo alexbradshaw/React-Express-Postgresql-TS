@@ -1,0 +1,11 @@
+.active {
+  color: red;
+}
+
+nav {
+  min-width: 800px;
+  place-self: start;
+  display: grid;
+  justify-content: space-evenly;
+  grid-auto-flow: column;
+}

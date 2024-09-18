@@ -14,9 +14,10 @@ export const getUsers = async (req: Request, res: Response) => {
 
 export const newUser = async (req: Request, res: Response) => {
   try {
-    const user = await query('INSERT INTO users (name) VALUES ($1);', [
-      req.body.name,
-    ]);
+    const user = await query(
+      'INSERT INTO users (name, handles) VALUES ($1, $2);',
+      [req.body.name, req.body.handles],
+    );
 
     res.json({ newUser: user.rows });
   } catch (e) {
